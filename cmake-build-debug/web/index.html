@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<title>Simple-Web-Server html-file</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<script>
+
+	/// 能从url中parse出相应参数的函数。
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        // 使用 window.location.search 得到当前页面下 url string。
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+	/// 尝试使用。
+	function FillResult() {
+        var rslt = GetQueryString("result");
+        if(rslt != null && rslt.toString().length > 1) {
+            alert(rslt);
+		}
+	}
+</script>
+
+<body>
+<h1>可以从下面输入框输入算式，后台调用程序进行计算。</h1>
+<p>Use POST method</p>
+<form method="post">
+	Expression: <input type="text" name="Expression" value="1+1"/><br/>
+	<input type="submit" value="Submit"/>
+</form>
+
+<p>Use GET method</p>
+<form method="get">
+	Expression: <input type="text" name="Expression" value="1+1"/><br/>
+	<input type="submit" value="Submit"/>
+</form>
+
+</body>
+</html>

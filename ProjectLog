@@ -1,0 +1,11 @@
+Now I have finished copying the source code, then what I am going to do is
+to learn how to use it.
+
+The first thing to do is to understand the interfaces.
+
+Because the http server has to behave differently according to different requests, the inner
+data structure is set to be a map whose key is a regular expression. And the data structure matches the
+regular expression, and leads us to a function dealing with this kinds of requests.
+
+Then, I need to learn how to use a regular expression.
+I can dive into the test code to get some example.
