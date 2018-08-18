@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/httpServer.dir/main.cpp.o"
+  "CMakeFiles/httpServer.dir/https_example.cpp.o"
+  "CMakeFiles/httpServer.dir/http_example.cpp.o"
   "httpServer.pdb"
   "httpServer"
 )

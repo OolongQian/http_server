@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/qiansucheng/Downloads/http_server/main.cpp" "/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles/httpServer.dir/main.cpp.o"
+  "/home/qiansucheng/Downloads/http_server/http_example.cpp" "/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles/httpServer.dir/http_example.cpp.o"
+  "/home/qiansucheng/Downloads/http_server/https_example.cpp" "/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles/httpServer.dir/https_example.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

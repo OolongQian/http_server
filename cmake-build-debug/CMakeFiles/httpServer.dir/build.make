@@ -57,27 +57,42 @@ include CMakeFiles/httpServer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/httpServer.dir/flags.make
 
-CMakeFiles/httpServer.dir/main.cpp.o: CMakeFiles/httpServer.dir/flags.make
-CMakeFiles/httpServer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httpServer.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/main.cpp.o -c /home/qiansucheng/Downloads/http_server/main.cpp
+CMakeFiles/httpServer.dir/https_example.cpp.o: CMakeFiles/httpServer.dir/flags.make
+CMakeFiles/httpServer.dir/https_example.cpp.o: ../https_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httpServer.dir/https_example.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/https_example.cpp.o -c /home/qiansucheng/Downloads/http_server/https_example.cpp
 
-CMakeFiles/httpServer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpServer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiansucheng/Downloads/http_server/main.cpp > CMakeFiles/httpServer.dir/main.cpp.i
+CMakeFiles/httpServer.dir/https_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpServer.dir/https_example.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiansucheng/Downloads/http_server/https_example.cpp > CMakeFiles/httpServer.dir/https_example.cpp.i
 
-CMakeFiles/httpServer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpServer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiansucheng/Downloads/http_server/main.cpp -o CMakeFiles/httpServer.dir/main.cpp.s
+CMakeFiles/httpServer.dir/https_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpServer.dir/https_example.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiansucheng/Downloads/http_server/https_example.cpp -o CMakeFiles/httpServer.dir/https_example.cpp.s
+
+CMakeFiles/httpServer.dir/http_example.cpp.o: CMakeFiles/httpServer.dir/flags.make
+CMakeFiles/httpServer.dir/http_example.cpp.o: ../http_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httpServer.dir/http_example.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/http_example.cpp.o -c /home/qiansucheng/Downloads/http_server/http_example.cpp
+
+CMakeFiles/httpServer.dir/http_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpServer.dir/http_example.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiansucheng/Downloads/http_server/http_example.cpp > CMakeFiles/httpServer.dir/http_example.cpp.i
+
+CMakeFiles/httpServer.dir/http_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpServer.dir/http_example.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiansucheng/Downloads/http_server/http_example.cpp -o CMakeFiles/httpServer.dir/http_example.cpp.s
 
 # Object files for target httpServer
 httpServer_OBJECTS = \
-"CMakeFiles/httpServer.dir/main.cpp.o"
+"CMakeFiles/httpServer.dir/https_example.cpp.o" \
+"CMakeFiles/httpServer.dir/http_example.cpp.o"
 
 # External object files for target httpServer
 httpServer_EXTERNAL_OBJECTS =
 
-httpServer: CMakeFiles/httpServer.dir/main.cpp.o
+httpServer: CMakeFiles/httpServer.dir/https_example.cpp.o
+httpServer: CMakeFiles/httpServer.dir/http_example.cpp.o
 httpServer: CMakeFiles/httpServer.dir/build.make
 httpServer: /usr/lib/x86_64-linux-gnu/libboost_system.so
 httpServer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -86,7 +101,7 @@ httpServer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 httpServer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 httpServer: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 httpServer: CMakeFiles/httpServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable httpServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable httpServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/httpServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

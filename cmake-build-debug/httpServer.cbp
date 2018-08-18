@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="httpServer">
-				<Option output="/home/qiansucheng/Downloads/http_server/cmake-build-debug/httpServer" prefix_auto="0" extension_auto="0"/>
+			<Target title="webServer">
+				<Option output="/home/qiansucheng/Downloads/http_server/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/qiansucheng/Downloads/http_server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -54,14 +54,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 httpServer"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 webServer"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="httpServer/fast">
-				<Option output="/home/qiansucheng/Downloads/http_server/cmake-build-debug/httpServer" prefix_auto="0" extension_auto="0"/>
+			<Target title="webServer/fast">
+				<Option output="/home/qiansucheng/Downloads/http_server/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/qiansucheng/Downloads/http_server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -77,27 +77,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 httpServer/fast"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 webServer/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/qiansucheng/Downloads/http_server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/qiansucheng/Downloads/http_server/client_http.hpp">
-			<Option target="httpServer"/>
-		</Unit>
-		<Unit filename="/home/qiansucheng/Downloads/http_server/main.cpp">
-			<Option target="httpServer"/>
-		</Unit>
-		<Unit filename="/home/qiansucheng/Downloads/http_server/server_http.hpp">
-			<Option target="httpServer"/>
-		</Unit>
-		<Unit filename="/home/qiansucheng/Downloads/http_server/status_code.hpp">
-			<Option target="httpServer"/>
-		</Unit>
-		<Unit filename="/home/qiansucheng/Downloads/http_server/utility.hpp">
-			<Option target="httpServer"/>
+		<Unit filename="/home/qiansucheng/Downloads/http_server/https_example.cpp">
+			<Option target="webServer"/>
 		</Unit>
 		<Unit filename="/home/qiansucheng/Downloads/http_server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

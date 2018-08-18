@@ -28,7 +28,7 @@ boost/asio.hpp
 boost/asio/steady_timer.hpp
 -
 
-/home/qiansucheng/Downloads/http_server/main.cpp
+/home/qiansucheng/Downloads/http_server/https_example.cpp
 iostream
 -
 cstring
@@ -39,6 +39,8 @@ server_http.hpp
 /home/qiansucheng/Downloads/http_server/server_http.hpp
 client_http.hpp
 /home/qiansucheng/Downloads/http_server/client_http.hpp
+server_https.hpp
+/home/qiansucheng/Downloads/http_server/server_https.hpp
 boost/thread.hpp
 -
 boost/property_tree/json_parser.hpp
@@ -86,6 +88,14 @@ boost/asio/steady_timer.hpp
 boost/regex.hpp
 -
 regex
+-
+
+/home/qiansucheng/Downloads/http_server/server_https.hpp
+server_http.hpp
+/home/qiansucheng/Downloads/http_server/server_http.hpp
+asio/ssl.hpp
+-
+boost/asio/ssl.hpp
 -
 
 /home/qiansucheng/Downloads/http_server/status_code.hpp

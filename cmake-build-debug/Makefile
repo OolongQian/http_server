@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named httpServer
+# Target rules for targets named webServer
 
 # Build rule for target.
-httpServer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 httpServer
-.PHONY : httpServer
+webServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 webServer
+.PHONY : webServer
 
 # fast build rule for target.
-httpServer/fast:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/build
-.PHONY : httpServer/fast
+webServer/fast:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/build
+.PHONY : webServer/fast
 
-main.o: main.cpp.o
+https_example.o: https_example.cpp.o
 
-.PHONY : main.o
+.PHONY : https_example.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/main.cpp.o
-.PHONY : main.cpp.o
+https_example.cpp.o:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/https_example.cpp.o
+.PHONY : https_example.cpp.o
 
-main.i: main.cpp.i
+https_example.i: https_example.cpp.i
 
-.PHONY : main.i
+.PHONY : https_example.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/main.cpp.i
-.PHONY : main.cpp.i
+https_example.cpp.i:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/https_example.cpp.i
+.PHONY : https_example.cpp.i
 
-main.s: main.cpp.s
+https_example.s: https_example.cpp.s
 
-.PHONY : main.s
+.PHONY : https_example.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/main.cpp.s
-.PHONY : main.cpp.s
+https_example.cpp.s:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/https_example.cpp.s
+.PHONY : https_example.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... httpServer"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... webServer"
+	@echo "... https_example.o"
+	@echo "... https_example.i"
+	@echo "... https_example.s"
 .PHONY : help
 
 

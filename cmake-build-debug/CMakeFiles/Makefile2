@@ -65,39 +65,39 @@ CMAKE_SOURCE_DIR = /home/qiansucheng/Downloads/http_server
 CMAKE_BINARY_DIR = /home/qiansucheng/Downloads/http_server/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/httpServer.dir
+# Target rules for target CMakeFiles/webServer.dir
 
 # All Build rule for target.
-CMakeFiles/httpServer.dir/all:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/depend
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target httpServer"
-.PHONY : CMakeFiles/httpServer.dir/all
+CMakeFiles/webServer.dir/all:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/depend
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target webServer"
+.PHONY : CMakeFiles/webServer.dir/all
 
 # Include target in all.
-all: CMakeFiles/httpServer.dir/all
+all: CMakeFiles/webServer.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/httpServer.dir/rule: cmake_check_build_system
+CMakeFiles/webServer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/httpServer.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/webServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qiansucheng/Downloads/http_server/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/httpServer.dir/rule
+.PHONY : CMakeFiles/webServer.dir/rule
 
 # Convenience name for target.
-httpServer: CMakeFiles/httpServer.dir/rule
+webServer: CMakeFiles/webServer.dir/rule
 
-.PHONY : httpServer
-
-# clean rule for target.
-CMakeFiles/httpServer.dir/clean:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/clean
-.PHONY : CMakeFiles/httpServer.dir/clean
+.PHONY : webServer
 
 # clean rule for target.
-clean: CMakeFiles/httpServer.dir/clean
+CMakeFiles/webServer.dir/clean:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/clean
+.PHONY : CMakeFiles/webServer.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/webServer.dir/clean
 
 .PHONY : clean
 
