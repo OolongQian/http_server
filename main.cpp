@@ -3,7 +3,6 @@
 #include "utility.hpp"
 #include "server_http.hpp"
 #include "client_http.hpp"
-#include "server_https.hpp"
 #include <boost/thread.hpp>
 
 #include <boost/property_tree/json_parser.hpp>
@@ -94,9 +93,13 @@ int main() {
 			cout << request->query_string << endl;
 			auto para = request->parse_query_string();
 
-			string expression = para.cbegin()->second;
-			cout << "expression: " << expression << endl;
-			string cmd = "./prog " + expression;
+//			string expression = para.cbegin()->second;
+//			cout << "expression: " << expression << endl;
+//			string cmd = "./prog " + expression;
+//			system(cmd.c_str());
+			string ip_port = para.cbegin()->second;
+			cout << "ip-port: " << ip_port << endl;
+			string cmd = "/home/qiansucheng/Desktop/tigervnc-1.9.0.x86_64/usr/bin/vncviewer " + ip_port;
 			system(cmd.c_str());
 		}
 		/// 根据写在html form当中的文件路径返回response。
@@ -109,9 +112,13 @@ int main() {
 		/// POST的列表参数从实体体中传入，已经被整合在content当中，同样parse出expression，调用exe进行运算。
 		if(request->content.size() != 0) {
 			auto para = SimpleWeb::QueryString::parse(request->content.string());
-			string expression = para.cbegin()->second;
-			cout << "expression: " << expression << endl;
-			string cmd = "./prog " + expression;
+//			string expression = para.cbegin()->second;
+//			cout << "expression: " << expression << endl;
+//			string cmd = "./prog " + expression;
+//			system(cmd.c_str());
+			string ip_port = para.cbegin()->second;
+			cout << "ip-port: " << ip_port << endl;
+			string cmd = "/home/qiansucheng/Desktop/tigervnc-1.9.0.x86_64/usr/bin/vncviewer " + ip_port;
 			system(cmd.c_str());
 		}
 		/// 根据写在html form当中的文件路径返回response。

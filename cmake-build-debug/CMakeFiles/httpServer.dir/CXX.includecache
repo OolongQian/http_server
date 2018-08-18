@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/client_http.hpp
+/home/qiansucheng/Downloads/http_server/client_http.hpp
 utility.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/utility.hpp
+/home/qiansucheng/Downloads/http_server/utility.hpp
 limits
 -
 mutex
@@ -28,19 +28,17 @@ boost/asio.hpp
 boost/asio/steady_timer.hpp
 -
 
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/main.cpp
+/home/qiansucheng/Downloads/http_server/main.cpp
 iostream
 -
 cstring
 -
 utility.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/utility.hpp
+/home/qiansucheng/Downloads/http_server/utility.hpp
 server_http.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/server_http.hpp
+/home/qiansucheng/Downloads/http_server/server_http.hpp
 client_http.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/client_http.hpp
-server_https.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/server_https.hpp
+/home/qiansucheng/Downloads/http_server/client_http.hpp
 boost/thread.hpp
 -
 boost/property_tree/json_parser.hpp
@@ -56,9 +54,9 @@ fstream
 vector
 -
 
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/server_http.hpp
+/home/qiansucheng/Downloads/http_server/server_http.hpp
 utility.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/utility.hpp
+/home/qiansucheng/Downloads/http_server/utility.hpp
 functional
 -
 iostream
@@ -90,15 +88,7 @@ boost/regex.hpp
 regex
 -
 
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/server_https.hpp
-server_http.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/server_http.hpp
-asio/ssl.hpp
--
-boost/asio/ssl.hpp
--
-
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/status_code.hpp
+/home/qiansucheng/Downloads/http_server/status_code.hpp
 map
 -
 string
@@ -108,9 +98,9 @@ unordered_map
 vector
 -
 
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/utility.hpp
+/home/qiansucheng/Downloads/http_server/utility.hpp
 status_code.hpp
-/Users/qiansucheng/Desktop/ACM班/2018暑期/httpServer/status_code.hpp
+/home/qiansucheng/Downloads/http_server/status_code.hpp
 atomic
 -
 cstdlib
